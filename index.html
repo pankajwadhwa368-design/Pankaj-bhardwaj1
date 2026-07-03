@@ -195,9 +195,12 @@ time--;
 
 },5000);
 document.getElementById("telegramBtn").addEventListener("click", function () {
-fbq('track','Lead');
-fbq('track','CompleteRegistration');
-});
+fbq('track','subscribe');
+function trackRegistration() {
+  fbq('track', 'CompleteRegistration', {
+    content_name: 'Telegram Join',
+    value: 9.99,
+    currency: 'USD'
 </script>
             </body>
           </html>
